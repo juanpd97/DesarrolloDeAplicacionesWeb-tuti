@@ -10,10 +10,13 @@ respetar el siguiente criterio:
 
 */
 
+/*
 function esCaracterEspecial($caracter) {
     $caracteresEspeciales = '!@#$%^&*()_+[]{}|;:,.<>?';
     return strpos($caracteresEspeciales, $caracter) !== false;
-}
+}*/
+include('funciones.php');
+
 
 function randomPass(&$password) {
     $mayuscula = false;

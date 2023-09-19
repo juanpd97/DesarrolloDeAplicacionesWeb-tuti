@@ -19,4 +19,24 @@ function mostrarMatriz($matriz) {
 }
 
 
+//funcion ejercicio 5 y 6
+function esCaracterEspecial($caracter) {
+    $caracteresEspeciales = '!@#$%^&*()_+[]{}|;:,.<>?';
+    return strpos($caracteresEspeciales, $caracter) !== false;
+}
+
+
+function tieneConsecutivos($cadena) {
+    $longitud = strlen($cadena);
+
+    for ($i = 0; $i < $longitud - 1; $i++) {
+        $x1 = ord($cadena[$i]);
+        $x2 = ord($cadena[$i + 1]);
+
+        if ($x2 - $x1 == 1) {
+            return true; 
+        }
+    }
+    return false; 
+}
 ?>
