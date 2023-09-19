@@ -1,21 +1,24 @@
 <?php
-
+include("funciones.php");
 // Función del ejercicio 1
-function mayuscula(&$array) {
+/*function mayuscula(&$array) {
     foreach ($array as &$x) {
         $x = strtoupper($x);
     }
 }
+*/
+
+
 
 // Función para mostrar matriz en pantalla
-function mostrarMatriz($matriz) {
+/*function mostrarMatriz($matriz) {
     foreach ($matriz as $fila) {
         foreach ($fila as $elemento) {
             print_r($elemento);
         }
         echo "<br>";
     }
-}
+}*/
 
 
 //funcion para pasar una matriz a mayuscula
@@ -27,9 +30,9 @@ function matrizMayuscula(&$matriz){
 
 
 $matriz = [
-    ["manzana", "banana", "pera"],
-    ["perro", "gato", "pajaro"],
-    ["rojo", "verde", "azul"]
+    [" manzana ", " banana ", " pera "],
+    [" perro ", " gato ", " pajaro "],
+    [" rojo ", " verde ", " azul "]
 ];
 
 

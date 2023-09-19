@@ -1,8 +1,10 @@
 <?php
+include('funciones.php');
 /*Ejercicio 4 (10 puntos)
 Realizar una función que realice el producto cartesiano de dos matrices de 2 dimensiones.
 */
 
+/*
 function mostrarMatriz($matriz){
     foreach($matriz as $fila){
         foreach($fila as $elemento){
@@ -11,7 +13,7 @@ function mostrarMatriz($matriz){
         }
         echo "<br>";
     }
-}
+}*/
 
 
 function productoMatrices($matriz1, $matriz2, &$matrizR) {

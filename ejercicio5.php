@@ -48,8 +48,8 @@ randomPass($password);
 
 
 echo '<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">';
-echo '<h1>Contraseña:</h1>';
-echo '<h2>' . $password . '</h2>';
+echo '<h1 style="color:red">Contraseña:</h1>';
+echo '<h3>' . $password . '</h3>';
 echo '</div>';
 
 ?>

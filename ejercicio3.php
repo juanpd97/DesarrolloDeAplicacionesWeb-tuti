@@ -1,10 +1,11 @@
 <?php
-
+include('funciones.php');
 /*Ejercicio 3
 Realizar una función recursiva que recorra un array multidimensional (de dimensiones indefinidas) convirtiendo a
 mayúscula todo el contenido del mismo.
 */
 
+/*
 function mostrarMatriz($matriz){
     foreach($matriz as $fila){
         foreach($fila as $elemento){
@@ -13,7 +14,8 @@ function mostrarMatriz($matriz){
         }
         echo "<br>";
     }
-}
+}*/
+
 
 function mayusculasRecursiva(&$matriz){
     if(is_array($matriz)){
@@ -26,9 +28,9 @@ function mayusculasRecursiva(&$matriz){
 }
 
 $matriz = [
-    ["manzana", "banana", "pera"],
-    ["perro", "gato", "pajaro"],
-    ["rojo", "verde", "azul"]
+    ["manzana ", "banana ", "pera "],
+    ["perro ", "gato ", "pajaro "],
+    ["rojo ", "verde ", "azul "]
 ];
 
 
