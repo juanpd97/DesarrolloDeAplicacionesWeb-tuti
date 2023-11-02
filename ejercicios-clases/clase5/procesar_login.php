@@ -7,7 +7,7 @@ session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if($_POST["username"] == "juan" && $_POST["password"] == "1234"){
-        $_SESSION
+        
         header("Location: privado.php");    
         exit;
     } else{

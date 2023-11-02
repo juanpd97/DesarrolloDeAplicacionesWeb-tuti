@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 
 ?>
 
@@ -12,5 +14,7 @@
 </head>
 <body>
     <h1>Adentro</h1>
+
+    <a href="./logOut.php">salir</a>
 </body>
 </html>

@@ -63,8 +63,9 @@ session_start();
         <h2>Inicio de Sesión</h2>
 
         <?php
-        if($_SESSION["loginFallido"]){
+        if(isset($_SESSION["loginFallido"]) && $_SESSION["loginFallido"]){
             echo "<p>contraseña o usuario incorrecto</p>";
+            $_SESSION["loginFallido"] = false;
         }
         ?>
 
